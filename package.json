@@ -1,0 +1,25 @@
+{
+  "name": "illinois",
+  "version": "1.0.0",
+  "description": "App for finding Illinois political data",
+  "main": "index.js",
+  "repository": "https://github.com/jreidgreer/illinois.git",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "illinois",
+    "data",
+    "open"
+  ],
+  "author": "Reid Greer",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^1.13.1"
+  },
+  "dependencies": {
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "react-router": "^2.4.1"
+  }
+}
