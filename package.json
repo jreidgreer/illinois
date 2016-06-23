@@ -6,6 +6,7 @@
   "repository": "https://github.com/jreidgreer/illinois.git",
   "scripts": {
     "test": "test",
+    "start": "node server",
     "build-client": "webpack --progress --colors --watch"
   },
   "keywords": [

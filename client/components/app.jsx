@@ -6,7 +6,7 @@ const Router = require('react-router').Router;
 const Route = require('react-router').Route;
 
 // Load in top level components
-const Index = require('./Index');
+const Index = require('./Index.jsx');
 
 ReactDOM.render((
   <Router>

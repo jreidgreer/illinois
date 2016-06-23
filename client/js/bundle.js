@@ -52,7 +52,7 @@
 	const Route = __webpack_require__(168).Route;
 
 	// Load in top level components
-	const Index = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./Index\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	const Index = __webpack_require__(229);
 
 	ReactDOM.render(React.createElement(
 	  Router,
@@ -25871,6 +25871,18 @@
 
 	exports.default = (0, _createRouterHistory2.default)(_createHashHistory2.default);
 	module.exports = exports['default'];
+
+/***/ },
+/* 229 */
+/***/ function(module, exports, __webpack_require__) {
+
+	const React = __webpack_require__(1);
+
+	module.exports = () => React.createElement(
+	  'div',
+	  null,
+	  'Whadup.'
+	);
 
 /***/ }
 /******/ ]);
