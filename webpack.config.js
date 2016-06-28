@@ -1,3 +1,4 @@
+const webpack = require('webpack');
 // webpack.config.js exports a configuration object in the CommonJS pattern.
 module.exports = {
 
@@ -7,6 +8,13 @@ module.exports = {
   // the top-level file that then `requires` some other files, which then
   // `require` some other files, etc. Webpack pulls these all into a modularized
   // bundle.
+  plugins: [
+    new webpack.optimize.UglifyJsPlugin({
+      compress: {
+        warnings: false,
+      },
+    }),
+  ],
   entry: './client/components/app.jsx',
 
   // `output` is an object with options for the bundle that Webpack creates
@@ -72,7 +80,7 @@ module.exports = {
         query: {
           presets: ['stage-0', 'react', 'es2015'],
           plugins: ['transform-decorators-legacy'],
-        }
+        },
       },
        { test: /\.css$/, loader: 'style-loader!css-loader' },
     ]
