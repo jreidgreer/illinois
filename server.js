@@ -6,6 +6,9 @@ const config =  require('./config');
 
 app.use(express.static('client'));
 
+// Set a process title to allow for easy kill commands
+process.title = config.title;
+
 app.listen(config.port, function () {
   console.log(`${config.name} listening on port ${config.port}!`);
 });

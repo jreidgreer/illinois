@@ -7,7 +7,10 @@
   "scripts": {
     "test": "test",
     "start": "node server",
-    "build-client": "webpack --progress --colors --watch"
+    "stop": "pkill --signal SIGINT ilData",
+    "clean": "rm -rf client/js && mkdir client/js && rm -rf client/css && mkdir client/css",
+    "build-client": "webpack --progress --colors --watch",
+    "build": "npm run clean && npm run build-client"
   },
   "keywords": [
     "illinois",
