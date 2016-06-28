@@ -7,10 +7,12 @@ const Route = require('react-router').Route;
 
 // Load in top level components
 const Index = require('./Index.jsx');
+const LegislatureMember = require('./Index.jsx');
 
 ReactDOM.render((
   <Router>
     <Route path="/" component={Index} />
+    <Route path="/legislature/:id" component={LegislatureMember} />
   </Router>
   ), document.getElementById('app')
 );

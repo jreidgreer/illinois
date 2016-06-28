@@ -11,7 +11,8 @@
     "clean": "rm -rf client/js && mkdir client/js && rm -rf client/css && mkdir client/css",
     "build:js": "webpack --progress --colors --watch",
     "build:sass": "sass --watch client/sass:client/css",
-    "build": "npm run clean && npm run build:js"
+    "build:client": "npm run build:js && npm run build:sass",
+    "build": "npm run clean && npm run build:client"
   },
   "keywords": [
     "illinois",
@@ -31,6 +32,10 @@
     "babel-preset-stage-0": "^6.5.0",
     "babel-runtime": "^6.9.2",
     "eslint": "^2.13.1",
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-plugin-import": "^1.9.2",
+    "eslint-plugin-jsx-a11y": "^1.5.3",
+    "eslint-plugin-react": "^5.2.2",
     "express": "^4.14.0",
     "sass": "^0.5.0",
     "webpack": "^1.13.1"

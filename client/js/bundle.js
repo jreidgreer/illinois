@@ -53,11 +53,13 @@
 
 	// Load in top level components
 	const Index = __webpack_require__(229);
+	const LegislatureMember = __webpack_require__(229);
 
 	ReactDOM.render(React.createElement(
 	  Router,
 	  null,
-	  React.createElement(Route, { path: '/', component: Index })
+	  React.createElement(Route, { path: '/', component: Index }),
+	  React.createElement(Route, { path: '/legislature/:id', component: LegislatureMember })
 	), document.getElementById('app'));
 
 /***/ },
