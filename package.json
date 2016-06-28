@@ -9,8 +9,9 @@
     "start": "node server",
     "stop": "pkill --signal SIGINT ilData",
     "clean": "rm -rf client/js && mkdir client/js && rm -rf client/css && mkdir client/css",
-    "build-client": "webpack --progress --colors --watch",
-    "build": "npm run clean && npm run build-client"
+    "build:js": "webpack --progress --colors --watch",
+    "build:sass": "sass --watch client/sass:client/css",
+    "build": "npm run clean && npm run build:js"
   },
   "keywords": [
     "illinois",
@@ -31,6 +32,7 @@
     "babel-runtime": "^6.9.2",
     "eslint": "^2.13.1",
     "express": "^4.14.0",
+    "sass": "^0.5.0",
     "webpack": "^1.13.1"
   },
   "dependencies": {
