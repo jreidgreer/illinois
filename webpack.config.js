@@ -28,6 +28,8 @@ module.exports = {
     filename: 'bundle.js',
   },
 
+  devtool: 'source-map',
+
   // `module` is an object with options for how Webpack processes the files it loads
   // when it scans a `require` statement. 99% of the time, `loaders` will be the only
   // thing you specify inside of `module`.
@@ -68,7 +70,7 @@ module.exports = {
         // to what you see in request URLs, and the same thing could be achieved by writing this above:
         // loader: 'babel?presets[]=react,presets[]=es2015'
         query: {
-          presets: ['stage-0', 'react'],
+          presets: ['stage-0', 'react', 'es2015'],
           plugins: ['transform-decorators-legacy'],
         }
       },

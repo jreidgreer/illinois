@@ -6,5 +6,6 @@ const title = 'ilData';
 
 module.exports = {
   port,
-  name
-}
+  name,
+  title,
+};

@@ -1,4 +1,6 @@
 node_modules/
 .DS_Store
 client/css/
-client/cs/
+client/js/
+.sass-cache/
+npm-debug.log
