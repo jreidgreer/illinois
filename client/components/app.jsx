@@ -1,16 +1,15 @@
-const React = require('react');
-const ReactDOM = require('react-dom');
+import React from 'react';
+import ReactDOM from 'react-dom';
 
 // Load in React Router components
-const Router = require('react-router').Router;
-const Route = require('react-router').Route;
+import { Router, Route, hashHistory } from 'react-router';
 
 // Load in top level components
-const Index = require('./Index.jsx');
-const LegislatureMember = require('./Index.jsx');
+import Index from './Index.jsx';
+import LegislatureMember from './LegislatureMember.jsx';
 
 ReactDOM.render((
-  <Router>
+  <Router history={hashHistory}>
     <Route path="/" component={Index} />
     <Route path="/legislature/:id" component={LegislatureMember} />
   </Router>

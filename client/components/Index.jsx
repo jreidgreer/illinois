@@ -1,4 +1,7 @@
-const React = require('react');
+import React from 'react';
+import Header from './partials/Header.jsx';
 
-module.exports = () =>
-  <div>Whadup.</div>
+export default () =>
+  <div>
+    <Header />
+  </div>;
