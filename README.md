@@ -10,3 +10,13 @@ This project is intended to act as a easy-to-use access point for open data abou
 $ git clone <urlToRepo>
 $ npm install
 ```
+
+## Running
+
+To run the project in `dev` mode, with watched (hotloaded) builds, use:
+
+```
+$ npm run build
+// In a new terminal window
+$ npm start
+```
