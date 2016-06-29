@@ -12,8 +12,9 @@
     "build:js": "webpack --progress --colors --watch",
     "build:sass": "sass --watch client/scss:client/css",
     "build:sass:bootstrap": "sass -t compressed node_modules/bootstrap/scss/bootstrap.scss:client/css/bootstrap.min.css",
-    "build:css": "npm run build:sass:bootstrap && npm run build:sass",
-    "build:client": "npm run build:js && npm run build:css",
+
+    "build:css": "npm run build:sass:bootstrap & npm run build:sass",
+    "build:client": "npm run build:js & npm run build:css",
     "build": "npm run clean && npm run build:client"
   },
   "keywords": [
