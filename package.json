@@ -12,7 +12,6 @@
     "build:js": "webpack --progress --colors --watch",
     "build:sass": "sass --watch client/scss:client/css",
     "build:sass:bootstrap": "sass -t compressed node_modules/bootstrap/scss/bootstrap.scss:client/css/bootstrap.min.css",
-
     "build:css": "npm run build:sass:bootstrap & npm run build:sass",
     "build:client": "npm run build:js & npm run build:css",
     "build": "npm run clean && npm run build:client"
@@ -45,6 +44,7 @@
   },
   "dependencies": {
     "bootstrap": "^4.0.0-alpha.2",
+    "if-env": "^1.0.0",
     "jquery": "^3.0.0",
     "react": "^15.1.0",
     "react-dom": "^15.1.0",
