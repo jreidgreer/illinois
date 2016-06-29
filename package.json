@@ -11,7 +11,8 @@
     "clean": "rm -rf client/js && mkdir client/js && rm -rf client/css && mkdir client/css",
     "build:js": "webpack --progress --colors --watch",
     "build:sass": "sass --watch client/scss:client/css",
-    "build:client": "npm run build:js && npm run build:sass",
+    "build:sass:bootstrap": "sass -t compressed node_modules/bootstrap/scss/bootstrap.scss:client/css/bootstrap.min.css",
+    "build:client": "npm run build:js && npm run build:sass:bootstrap && npm run build:sass",
     "build": "npm run clean && npm run build:client"
   },
   "keywords": [
