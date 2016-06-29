@@ -8,6 +8,11 @@ import { Router, Route, hashHistory } from 'react-router';
 import Index from './Index.jsx';
 import LegislatureMember from './LegislatureMember.jsx';
 
+// Load in jQuery & Bootstrap JS
+// import 'jquery';
+// import 'bootstrap';
+
+
 ReactDOM.render((
   <Router history={hashHistory}>
     <Route path="/" component={Index} />
