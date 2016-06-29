@@ -6,7 +6,7 @@
   "repository": "https://github.com/jreidgreer/illinois.git",
   "scripts": {
     "test": "test",
-    "start": "node server",
+    "start": "node server/server.js",
     "stop": "pkill --signal SIGINT ilData",
     "clean": "rm -rf client/js && mkdir client/js && rm -rf client/css && mkdir client/css",
     "build:js": "webpack --progress --colors --watch",
